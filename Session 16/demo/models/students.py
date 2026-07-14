@@ -23,6 +23,6 @@ class StudentModel(Base):
 
     subjects = relationship(
         "SubjectModel",
-        back_populates = True,
+        back_populates = "students",
         secondary = student_subject
     )

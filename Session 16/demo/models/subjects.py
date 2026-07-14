@@ -15,7 +15,7 @@ class SubjectModel(Base):
     
     students = relationship(
         "StudentModel",
-        back_populates=True,
+        back_populates = "subjects",
         secondary = student_subject
     )
     

@@ -12,7 +12,7 @@ class ClassroomModel(Base):
     
     teacher = relationship(
         "TeacherModel",
-        back_populates="teacher",
+        back_populates="classroom",
         uselist= False
     )
     
